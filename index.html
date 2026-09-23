@@ -1,0 +1,4307 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="bbb.jpg">
+    <meta name="keyframes" content="CASSIA,اثاث,wood,اثاث منازل,فرش,عفش,اثاث المنوفيه">
+    <meta name="charset" content=" مصنع كاسيا فرنتشر متخصص في تصميم اطقم الاثاث الخارجى من عام 1996م الجوده والثقة هم اساس مصنعنا">
+    <meta name="google-site-verification" content="F0VjDudlU4eIoWzLP4PeY_ADUVvCc-ZF3WqfhKERpLI" />
+    <title>CASSIA||FURNITURE</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Cairo", sans-serif;
+            background: #fff;
+            color: #171717;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            font-family: inherit;
+        }
+
+
+        /* =========================
+           LOADER
+        ========================= */
+
+        #loader {
+
+            position: fixed;
+
+            inset: 0;
+
+            background: #0b0b0b;
+
+            z-index: 99999;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            transition: 1s ease;
+
+        }
+
+
+        .loader-box {
+
+            text-align: center;
+
+            color: white;
+
+        }
+
+
+        .loader-logo {
+
+            font-size: 42px;
+
+            font-weight: 900;
+
+            letter-spacing: 5px;
+
+ 
+        }
+
+
+        .loader-circle {
+
+            width: 80px;
+
+            height: 80px;
+
+            border-radius: 50%;
+
+            border: 5px solid rgba(255, 204, 0, .15);
+
+            border-top: 5px solid #ffd000;
+
+            border-right: 5px solid #ffd000;
+
+            margin: auto;
+
+            animation: loaderSpin 1s linear infinite;
+
+        }
+
+
+        .loader-text {
+
+            margin-top: 25px;
+
+            color: #aaa;
+
+            font-size: 15px;
+
+        }
+
+
+        @keyframes loaderSpin {
+
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(100deg);
+            }
+
+        }
+
+
+        /*
+
+        بعد 12 ثانية JavaScript
+        هيخفي الـ loader
+
+        */
+
+
+        #loader.hide {
+
+            opacity: 0;
+
+            visibility: hidden;
+
+            pointer-events: none;
+
+        }
+
+
+        /* =========================
+           TOP BAR
+        ========================= */
+
+        .top-bar {
+
+            background: #0b0b0b;
+
+            color: #fff;
+
+            padding: 9px 6%;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            font-size: 13px;
+
+        }
+
+
+        .top-contact {
+
+            display: flex;
+
+            gap: 22px;
+
+            align-items: center;
+
+        }
+
+
+        .top-contact a {
+
+            color: #ddd;
+
+            transition: .3s;
+
+        }
+
+
+        .top-contact a:hover {
+
+            color: #ffd000;
+
+        }
+
+
+        .top-contact i {
+
+            color: #ffd000;
+
+            margin-left: 5px;
+
+        }
+
+
+        .social-icons {
+
+            display: flex;
+
+            gap: 13px;
+
+        }
+
+
+        .social-icons a {
+
+            width: 28px;
+
+            height: 28px;
+
+            border: 1px solid #444;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            transition: .3s;
+
+        }
+
+
+        .social-icons a:hover {
+
+            background: #ffd000;
+
+            color: #000;
+
+            border-color: #ffd000;
+
+            transform: translateY(-3px);
+
+        }
+
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        nav {
+
+            height: 82px;
+
+            background: rgba(255,255,255,.96);
+
+            backdrop-filter: blur(12px);
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            padding: 0 6%;
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1000;
+
+            box-shadow: 0 4px 25px rgba(0,0,0,.06);
+
+        }
+
+
+        .logo {
+
+            font-size: 25px;
+
+            font-weight: 900;
+
+            letter-spacing: 3px;
+            margin-top: 120px;
+            margin-left: -39px;
+
+        }
+
+
+        .logo span {
+
+            color: #d8a900;
+
+        }
+
+
+        .nav-links {
+
+            display: flex;
+
+            gap: 30px;
+
+            list-style: none;
+
+        }
+
+
+        .nav-links a {
+
+            font-weight: 600;
+
+            font-size: 15px;
+
+            position: relative;
+
+        }
+
+
+        .nav-links a::after {
+
+            content: "";
+
+            position: absolute;
+
+            bottom: -8px;
+
+            right: 0;
+
+            width: 0;
+
+            height: 2px;
+
+            background: #d8a900;
+
+            transition: .3s;
+
+        }
+
+
+        .nav-links a:hover::after {
+
+            width: 100%;
+
+        }
+
+
+        .nav-actions {
+
+            display: flex;
+
+            gap: 10px;
+
+            align-items: center;
+
+        }
+
+
+        .language-btn {
+
+            border: 1px solid #ddd;
+
+            background: white;
+
+            padding: 8px 14px;
+
+            border-radius: 30px;
+
+            cursor: pointer;
+
+            transition: .3s;
+
+        }
+
+
+        .language-btn:hover {
+
+            background: #ffd000;
+
+            border-color: #ffd000;
+
+        }
+
+
+        .menu-btn {
+
+            display: none;
+
+            font-size: 25px;
+
+            cursor: pointer;
+
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+
+            min-height: 720px;
+
+            position: relative;
+
+            display: flex;
+
+            align-items: center;
+
+            overflow: hidden;
+
+            background:
+
+                linear-gradient(
+                    90deg,
+                    rgba(0,0,0,.82),
+                    rgba(0,0,0,.38)
+                ),
+
+                url("https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1800&q=85");
+
+            background-size: cover;
+
+            background-position: center;
+
+            color: white;
+
+        }
+
+
+        .hero-content {
+
+            width: 90%;
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            animation: heroText 1.3s ease;
+
+        }
+
+
+        .hero-small {
+
+            color: #ffd000;
+
+            font-weight: 700;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .hero h1 {
+
+            font-size: clamp(42px, 6vw, 78px);
+
+            line-height: 1.15;
+
+            max-width: 800px;
+
+            font-weight: 900;
+
+        }
+
+
+        .hero p {
+
+            max-width: 650px;
+
+            color: #ddd;
+
+            font-size: 18px;
+
+            margin: 25px 0;
+
+            line-height: 2;
+
+        }
+
+
+        .hero-buttons {
+
+            display: flex;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+
+        }
+
+
+        .btn {
+
+            padding: 14px 28px;
+
+            border-radius: 4px;
+
+            font-weight: 700;
+
+            display: inline-flex;
+
+            gap: 10px;
+
+            align-items: center;
+
+            transition: .3s;
+
+        }
+
+
+        .btn-gold {
+
+            background: #ffd000;
+
+            color: #111;
+
+        }
+
+
+        .btn-gold:hover {
+
+            transform: translateY(-4px);
+
+            box-shadow: 0 12px 30px rgba(255,208,0,.25);
+
+        }
+
+
+        .btn-outline {
+
+            border: 1px solid white;
+
+            color: white;
+
+        }
+
+
+        .btn-outline:hover {
+
+            background: white;
+
+            color: #111;
+
+        }
+
+
+        @keyframes heroText {
+
+            from {
+
+                opacity: 0;
+
+                transform: translateY(50px);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform: translateY(0);
+
+            }
+
+        }
+
+
+        /* =========================
+           FEATURES
+        ========================= */
+
+        .features {
+
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            background: #111;
+
+            color: white;
+
+        }
+
+
+        .feature {
+
+            padding: 30px;
+
+            text-align: center;
+
+            border-left: 1px solid #333;
+
+        }
+
+
+        .feature i {
+
+            font-size: 27px;
+
+            color: #ffd000;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .feature h3 {
+
+            font-size: 16px;
+
+        }
+
+
+        .feature p {
+
+            color: #999;
+
+            font-size: 12px;
+
+            margin-top: 5px;
+
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about-section {
+
+            padding: 110px 7%;
+
+            background: #f5f3ee;
+
+        }
+
+
+        .about {
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 70px;
+
+            align-items: center;
+
+        }
+
+
+        .about-image {
+
+            position: relative;
+
+            animation: imageRight 1s ease both;
+
+        }
+
+
+        .about-image img {
+
+            width: 100%;
+
+            height: 530px;
+
+            object-fit: cover;
+
+            border-radius: 5px;
+
+            box-shadow: 20px 20px 0 #ffd000;
+
+        }
+
+
+        .experience {
+
+            position: absolute;
+
+            bottom: 25px;
+
+            right: 25px;
+
+            background: #111;
+
+            color: white;
+
+            padding: 18px 25px;
+
+        }
+
+
+        .experience strong {
+
+            display: block;
+
+            font-size: 30px;
+
+            color: #ffd000;
+
+        }
+
+
+        .about-content {
+
+            animation: textLeft 1s ease both;
+
+        }
+
+
+        .section-label {
+
+            color: #b28b00;
+
+            font-weight: 800;
+
+            letter-spacing: 1px;
+
+        }
+
+
+        .about h2 {
+
+            font-size: 42px;
+
+            margin: 12px 0 20px;
+
+            line-height: 1.3;
+
+        }
+
+
+        .about p {
+
+            color: #666;
+
+            line-height: 2;
+
+            margin-bottom: 18px;
+
+        }
+
+
+        .check {
+
+            display: flex;
+
+            gap: 10px;
+
+            margin: 12px 0;
+
+            font-weight: 600;
+
+        }
+
+
+        .check i {
+
+            color: #d3a900;
+
+        }
+
+
+        @keyframes imageRight {
+
+            from {
+
+                opacity: 0;
+
+                transform: translateX(100px);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform: translateX(0);
+
+            }
+
+        }
+
+
+        @keyframes textLeft {
+
+            from {
+
+                opacity: 0;
+
+                transform: translateX(-100px);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform: translateX(0);
+
+            }
+
+        }
+
+
+        /* =========================
+           PRODUCTS
+        ========================= */
+
+        .products-section {
+
+            padding: 110px 6%;
+
+            background: white;
+
+        }
+
+
+        .section-head {
+
+            text-align: center;
+
+            max-width: 700px;
+
+            margin: auto;
+
+            margin-bottom: 50px;
+
+        }
+
+
+        .section-head h2 {
+
+            font-size: 42px;
+
+            margin: 10px 0;
+
+        }
+
+
+        .section-head p {
+
+            color: #777;
+
+            line-height: 2;
+
+        }
+
+
+        .filters {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            margin-bottom: 40px;
+
+            flex-wrap: wrap;
+
+        }
+
+
+        .filters input,
+        .filters select {
+
+            padding: 13px 18px;
+
+            border: 1px solid #ddd;
+
+            border-radius: 5px;
+
+            outline: none;
+
+            min-width: 220px;
+
+        }
+
+
+        .products {
+
+            max-width: 1250px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 25px;
+
+        }
+
+
+        .product-card {
+
+            background: white;
+
+            border: 1px solid #eee;
+
+            overflow: hidden;
+
+            transition: .4s;
+
+            position: relative;
+
+        }
+
+
+        .product-card:hover {
+
+            transform: translateY(-10px);
+
+            box-shadow: 0 20px 50px rgba(0,0,0,.12);
+
+        }
+
+
+        .product-image {
+
+            height: 300px;
+
+            overflow: hidden;
+
+            position: relative;
+
+        }
+
+
+        .product-image img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            transition: .6s;
+
+        }
+
+
+        .product-card:hover img {
+
+            transform: scale(1.08);
+
+        }
+
+
+        .product-content {
+
+            padding: 20px;
+
+        }
+
+
+        .product-content h3 {
+
+            font-size: 18px;
+
+            margin-bottom: 8px;
+
+        }
+
+
+        .product-content p {
+
+            color: #888;
+
+            font-size: 13px;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .product-bottom {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+        }
+
+
+        .price {
+
+            font-weight: 900;
+
+            color: #b38b00;
+
+        }
+
+
+        .order-btn {
+
+            border: 0;
+
+            background: #111;
+
+            color: white;
+
+            padding: 9px 13px;
+
+            cursor: pointer;
+
+            transition: .3s;
+
+        }
+
+
+        .order-btn:hover {
+
+            background: #ffd000;
+
+            color: #111;
+
+        }
+
+
+        /* =========================
+           SPECIAL SECTION
+        ========================= */
+
+        .special-section {
+
+            padding: 110px 7%;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    #151515,
+                    #252525
+                );
+
+            color: white;
+
+            overflow: hidden;
+
+        }
+
+
+        .special {
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 70px;
+
+            align-items: center;
+
+        }
+
+
+        /* الصورة من اليمين */
+
+        .special-image {
+
+            order: 2;
+
+            transform: translateX(100px);
+
+            opacity: 0;
+
+        }
+
+
+        /* الكلام من الشمال */
+
+        .special-content {
+
+            order: 1;
+
+            transform: translateX(-100px);
+
+            opacity: 0;
+
+        }
+
+
+        .special.show .special-image {
+
+            animation: specialImage 1s ease forwards;
+
+        }
+
+
+        .special.show .special-content {
+
+            animation: specialText 1s ease forwards;
+
+        }
+
+
+        .special-image img {
+
+            width: 100%;
+
+            height: 500px;
+
+            object-fit: cover;
+
+            border-radius: 5px;
+
+            box-shadow: -20px 20px 0 #ffd000;
+
+        }
+
+
+        .special-content h2 {
+
+            font-size: 45px;
+
+            line-height: 1.3;
+
+            margin: 15px 0 25px;
+
+        }
+
+
+        .special-content p {
+
+            color: #bbb;
+
+            line-height: 2;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        @keyframes specialImage {
+
+            to {
+
+                opacity: 1;
+
+                transform: translateX(0);
+
+            }
+
+        }
+
+
+        @keyframes specialText {
+
+            to {
+
+                opacity: 1;
+
+                transform: translateX(0);
+
+            }
+
+        }
+
+
+        /* =========================
+           STATS
+        ========================= */
+
+        .stats {
+
+            padding: 80px 7%;
+
+            display: grid;
+
+            grid-template-columns: repeat(4,1fr);
+
+            background: #ffd000;
+
+        }
+
+
+        .stat {
+
+            text-align: center;
+
+        }
+
+
+        .stat i {
+
+            font-size: 30px;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .stat strong {
+
+            display: block;
+
+            font-size: 38px;
+
+            font-weight: 900;
+
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact-section {
+
+            padding: 100px 7%;
+
+            background: #f7f7f7;
+
+        }
+
+
+        .contact {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns: .8fr 1.2fr;
+
+            gap: 50px;
+
+        }
+
+
+        .contact-info h2 {
+
+            font-size: 40px;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .contact-info p {
+
+            color: #777;
+
+            line-height: 2;
+
+        }
+
+
+        .contact-item {
+
+            display: flex;
+
+            gap: 15px;
+
+            align-items: center;
+
+            margin-top: 25px;
+
+        }
+
+
+        .contact-item i {
+
+            width: 45px;
+
+            height: 45px;
+
+            background: #111;
+
+            color: #ffd000;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 50%;
+
+        }
+
+
+        .contact-form {
+
+            background: white;
+
+            padding: 35px;
+
+            box-shadow: 0 20px 50px rgba(0,0,0,.08);
+
+        }
+
+
+        .input-group {
+
+            margin-bottom: 17px;
+
+        }
+
+
+        .input-group input,
+        .input-group textarea {
+
+            width: 100%;
+
+            padding: 14px;
+
+            border: 1px solid #ddd;
+
+            outline: none;
+
+        }
+
+
+        .input-group textarea {
+
+            min-height: 140px;
+
+            resize: vertical;
+
+        }
+
+
+        .submit-btn {
+
+            width: 100%;
+
+            padding: 15px;
+
+            border: 0;
+
+            background: #111;
+
+            color: white;
+
+            cursor: pointer;
+
+            font-weight: 700;
+
+            transition: .3s;
+
+        }
+
+
+        .submit-btn:hover {
+
+            background: #ffd000;
+
+            color: #111;
+
+        }
+
+
+        #formMessage {
+
+            margin-top: 15px;
+
+            text-align: center;
+
+            font-weight: 700;
+
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+
+            background: #090909;
+
+            color: white;
+
+            padding: 60px 7% 25px;
+
+        }
+
+
+        .footer-grid {
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns: 1.3fr 1fr 1fr;
+
+            gap: 50px;
+
+        }
+
+
+        .footer-logo {
+
+            font-size: 28px;
+
+            font-weight: 900;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .footer-logo span {
+
+            color: #ffd000;
+
+        }
+
+
+        footer p {
+
+            color: #999;
+
+            line-height: 2;
+
+        }
+
+
+        footer h3 {
+
+            margin-bottom: 18px;
+
+        }
+
+
+        .footer-links {
+
+            list-style: none;
+
+        }
+
+
+        .footer-links li {
+
+            margin-bottom: 10px;
+
+            color: #aaa;
+
+        }
+
+
+        .footer-links a:hover {
+
+            color: #ffd000;
+
+        }
+
+
+        .copyright {
+
+            text-align: center;
+
+            border-top: 1px solid #222;
+
+            margin-top: 40px;
+
+            padding-top: 25px;
+
+            color: #777;
+
+            font-size: 13px;
+
+        }
+
+
+        /* =========================
+           WHATSAPP
+        ========================= */
+
+        .whatsapp {
+
+            position: fixed;
+
+            bottom: 25px;
+
+            left: 25px;
+
+            width: 60px;
+
+            height: 60px;
+
+            background: #25d366;
+
+            color: white;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            font-size: 30px;
+
+            z-index: 5000;
+
+            box-shadow: 0 8px 30px rgba(0,0,0,.2);
+
+            animation: whatsappPulse 2s infinite;
+
+        }
+
+
+        @keyframes whatsappPulse {
+
+            0% {
+
+                box-shadow: 0 0 0 0 rgba(37,211,102,.5);
+
+            }
+
+            70% {
+
+                box-shadow: 0 0 0 18px rgba(37,211,102,0);
+
+            }
+
+            100% {
+
+                box-shadow: 0 0 0 0 rgba(37,211,102,0);
+
+            }
+
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media(max-width: 1000px) {
+
+            .products {
+
+                grid-template-columns: repeat(2,1fr);
+
+            }
+
+            .features,
+            .stats {
+
+                grid-template-columns: repeat(2,1fr);
+
+            }
+
+        }
+
+
+        @media(max-width: 800px) {
+
+            .top-bar {
+
+                display: none;
+
+            }
+
+
+            .nav-links {
+
+                position: fixed;
+
+                top: 82px;
+
+                right: -100%;
+
+                width: 100%;
+
+                height: calc(100vh - 82px);
+
+                background: white;
+
+                flex-direction: column;
+
+                padding: 40px;
+
+                transition: .4s;
+
+            }
+
+
+            .nav-links.active {
+
+                right: 0;
+
+            }
+
+
+            .menu-btn {
+
+                display: block;
+
+            }
+
+
+            .about,
+            .special,
+            .contact {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .special-image {
+
+                order: 1;
+
+            }
+
+
+            .special-content {
+
+                order: 2;
+
+            }
+
+
+            .footer-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+        }
+
+
+        @media(max-width: 600px) {
+
+            .hero {
+
+                min-height: 650px;
+
+            }
+
+
+            .hero h1 {
+
+                font-size: 40px;
+
+            }
+
+
+            .products {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .features,
+            .stats {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .about h2,
+            .special-content h2,
+            .section-head h2 {
+
+                font-size: 32px;
+
+            }
+
+
+            .about-image img,
+            .special-image img {
+
+                height: 380px;
+
+            }
+
+        }
+         
+        /* NAVBAR */
+        
+        /* HERO */ 
+
+        /* VIDEO SECTIONS FULL SCREEN */
+        .video-full{position:relative;height:100vh;min-height:600px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+        .video-full video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+        .video-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.75),rgba(0,0,0,.25))}
+        .video-content{position:relative;z-index:2;text-align:center;color:white;max-width:900px;padding:0 6%}
+        .video-content h2{font-size:clamp(36px,5vw,62px);font-weight:900;line-height:1.2;margin-bottom:15px}
+        .video-content h2 span{color:#ffd000}
+        .video-content p{font-size:18px;color:#ddd;line-height:2;margin-bottom:25px}
+        .video-badge{display:inline-block;background:#ffd000;color:#111;padding:6px 18px;border-radius:30px;font-weight:800;font-size:13px;margin-bottom:18px;letter-spacing:1px}
+
+        /* CATEGORIES - ركنة دوبار مر 
+
+        /* FEATURES */ 
+
+        /* ABOUT */ 
+
+        /* SPECIAL */ 
+     
+       
+
+    </style>
+    
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     LOADER
+========================= -->
+
+ 
+
+
+<!-- =========================
+     TOP BAR
+========================= -->
+
+<div class="top-bar">
+
+    <div class="top-contact">
+
+        <!-- غيّر الرقم هنا -->
+        <a href="tel:+201234567890">
+            <i class="fa-solid fa-phone"></i>
+                     +201515256635
+        </a>
+
+
+        <!-- الإيميل -->
+        <a href="mailto:info@example.com">
+
+            <i class="fa-solid fa-envelope"></i>
+
+            info@example.com
+
+        </a>
+
+    </div>
+
+
+    <div class="social-icons">
+
+        <a href="https://www.facebook.com/share/1GcJjkguno/" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+
+        <a href="https://www.facebook.com/share/1GcJjkguno/" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+
+        <a href="https://www.facebook.com/share/1GcJjkguno/" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+
+
+        <a
+            href="https://wa.me/201515256635"
+            target="_blank"
+            aria-label="WhatsApp"
+        >
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+        </a>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<nav>
+
+    <a href="#" class="logo" style="margin-top: -6px;">
+
+                    CASSIA  
+
+        <span>FURNITURE</span>
+ 
+    </a>
+        <img class="one" src="bbb.jpg" style="height: 60px;border-radius: 22px 22px 22px 22px;margin-top: -4px;margin-right: -640px;">
+
+
+    <ul class="nav-links" id="navLinks">
+
+        <li>
+            <a href="#home">الرئيسية</a>
+        </li>
+
+        <li>
+            <a href="#about">عن الشركة</a>
+        </li>
+
+        <li>
+            <a href="#products"> الاثاث</a>
+        </li>
+
+        <li>
+            <a href="#special">لماذا نحن</a>
+        </li>
+
+        <li>
+            <a href="#contact">تواصل معنا</a>
+        </li>
+
+    </ul>
+
+
+    <div class="nav-actions">
+
+        <button
+            class="language-btn"
+            id="languageBtn"
+        >
+
+            <i class="fa-solid fa-globe"></i>
+
+            English
+
+        </button>
+
+
+        <i
+            class="fa-solid fa-bars menu-btn"
+            id="menuBtn"
+        ></i>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="hero-small">
+            PREMIUM CASSIA FURNITURE
+        </div>
+
+
+        <h1>
+             اثاث فاخرة
+            <br>
+            تصنع الفرق
+        </h1>
+
+
+        <p>
+ مصنع كاسيا فرنتشر متخصص في تصميم اطقم الاثاث الخارجى من عام 1996م الجوده والثقة هم اساس مصنعنا
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="#products"
+                class="btn btn-gold"
+            >
+
+                اكتشف منتجاتنا
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+            </a>
+
+
+            <a
+                href="#contact"
+                class="btn btn-outline"
+            >
+
+                اطلب الآن
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="video-full" id="video1">
+    <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1581539250439-c96689b516dd?auto=format&fit=crop&w=1500">
+        <source src="https://videos.pexels.com/video-files/8965065/8965065-hd_1280_720_25fps.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+    <div class="video-content">
+        <div class="video-badge">CASSIA FURNITURE</div>
+        <h2>حرفة يدوية <span>بلمسة عصرية</span></h2>
+        <p>كل قطعة بتتصنع على ايد امهر النجارين بخامات مستوردة وتقفيل يخلي القطعة تعيش معاك سنين</p>
+        <a href="#contact" class="btn btn-gold">احجز معاينة مجانية</a>
+    </div>
+</section>
+          
+     
+
+<!-- =========================
+     FEATURES
+========================= -->
+
+<section class="features">
+
+    <div class="feature">
+
+        <i class="fa-solid fa-award"></i>
+
+        <h3>جودة عالية</h3>
+
+        <p>
+            خامات مختارة بعناية
+        </p>
+
+    </div>
+
+
+    <div class="feature">
+
+        <i class="fa-solid fa-ruler-combined"></i>
+
+        <h3>تصميم مخصص</h3>
+
+        <p>
+            تصميم يناسب احتياجاتك
+        </p>
+
+    </div>
+
+
+    <div class="feature">
+
+        <i class="fa-solid fa-truck-fast"></i>
+
+        <h3>سرعة في التنفيذ</h3>
+
+        <p>
+            التزام بالمواعيد
+        </p>
+
+    </div>
+
+
+    <div class="feature">
+
+        <i class="fa-solid fa-headset"></i>
+
+        <h3>خدمة العملاء</h3>
+
+        <p>
+            دعم مستمر
+        </p>
+
+    </div>
+
+</section>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&display=swap');
+  gggggg{font-family:'Cairo',sans-serif;display:block;padding:50px 4%;background:#f5f3ee;direction:rtl}
+  xxxxx1{text-align:center;margin-bottom:35px}
+  xxxxx1 ppppp1{display:block;font-size:32px;font-weight:900;color:#111}
+  xxxxx1 ppppp2{display:block;font-size:14px;color:#777;margin-top:8px}
+  qqqqqq{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  wwwwww{position:relative;height:420px;border-radius:14px;overflow:hidden;cursor:pointer}
+  wwwwww eeeeee{width:100%;height:100%;object-fit:cover;display:block;transition:.7s}
+  wwwwww:hover eeeeee{transform:scale(1.1)}
+  rrrrrr{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.92) 20%,rgba(0,0,0,.15) 70%)}
+  tttttt{position:absolute;bottom:18px;right:18px;left:18px;color:#fff}
+  yyyyyy{width:38px;height:38px;background:#ffcc00;color:#111;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;margin-bottom:50px;margin-right:auto}
+  tttttt uuuuuu{font-size:22px;font-weight:900;display:block}
+  tttttt iiiiii{font-size:11px;color:#ccc;line-height:1.7;display:block;margin-top:6px}
+  @media(max-width:900px){qqqqqq{grid-template-columns:1fr 1fr} wwwwww{height:350px}}
+  @media(max-width:500px){qqqqqq{grid-template-columns:1fr}}
+</style>
+<br><br><br><br><br>
+<gggggg>
+  <xxxxx1>
+     
+
+  <qqqqqq>
+    <!-- قسم الركنة -->
+    <wwwwww onclick="location.href='#productsContainer' ">
+      <eeeee><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600" style="width:100%;height:100%;object-fit:cover"></eeeee>
+      <rrrrrr></rrrrrr>
+      <tttttt>
+        <yyyyyy><i class="fa-solid fa-couch"></i></yyyyyy>
+        <uuuuuu>قسم الركنة</uuuuuu>
+        <iiiiii>ركنات مودرن وكلاسيك قماش مستورد وقابل للغسيل</iiiiii>
+      </tttttt>
+    </wwwwww>
+
+    <!-- قسم الدوبار -->
+    <wwwwww onclick="location.href='#productsContainer'">
+      <eeeee><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600" style="width:100%;height:100%;object-fit:cover"></eeeee>
+      <rrrrrr></rrrrrr>
+      <tttttt>
+        <yyyyyy><i class="fa-solid fa-bed"></i></yyyyyy>
+        <uuuuuu>قسم الدوبار</uuuuuu>
+        <iiiiii>سراير دوبار متينة بتصميمات تريندي وخشب زان احمر</iiiiii>
+      </tttttt>
+    </wwwwww>
+
+    <!-- قسم المراجيح -->
+    <wwwwww onclick="location.href='#productsContainer'">
+      <eeeee><img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=600" style="width:100%;height:100%;object-fit:cover"></eeeee>
+      <rrrrrr></rrrrrr>
+      <tttttt>
+        <yyyyyy><i class="fa-solid fa-chair"></i></yyyyyy>
+        <uuuuuu>قسم المراجيح</uuuuuu>
+        <iiiiii>مراجيح داخلية وخارجية تتحمل اوزان عالية وشكل ديكوري</iiiiii>
+      </tttttt>
+    </wwwwww>
+
+    <!-- قسم البراجيل -->
+    <wwwwww onclick="location.href='#productsContainer'">
+      <eeeee><img src="https://images.unsplash.com/photo-1591825729269-caeb344f6df2?w=600" style="width:100%;height:100%;object-fit:cover"></eeeee>
+      <rrrrrr></rrrrrr>
+      <tttttt>
+        <yyyyyy><i class="fa-solid fa-umbrella-beach"></i></yyyyyy>
+        <uuuuuu>قسم البراجيل</uuuuuu>
+        <iiiiii>برجولات خشب للجناين والروف بمعالجة ضد الشمس والمطر</iiiiii>
+      </tttttt>
+    </wwwwww>
+
+  </qqqqqq>
+</gggggg>
+
+<BR><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+      <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@900&display=swap" rel="stylesheet">
+<style>
+  vvvvvv{display:block;position:relative;height:100vh;min-height:600px;overflow:hidden;direction:rtl;font-family:'Cairo',sans-serif}
+  vvvvvv nnnnnn{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  bbbbbb{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.8) 15%,rgba(0,0,0,.3) 100%)}
+  cccccc{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 6%;z-index:2}
+  dddddd{color:#fff;max-width:900px}
+  dddddd eeeeee{display:inline-block;background:#ffcc00;color:#111;padding:5px 18px;border-radius:30px;font-size:13px;font-weight:900;margin-bottom:15px}
+  dddddd ffffff{font-size:clamp(32px,5vw,60px);font-weight:900;line-height:1.2;display:block}
+  dddddd ffffff kkkkkk{color:#ffcc00}
+  dddddd gggggg{font-size:17px;color:#dddddd6c;margin:18px 0 28px;display:block;line-height:2}
+  dddddd hhhhhh{background:#ffcc00;color:#111;padding:14px 30px;border-radius:8px;font-weight:900;text-decoration:none;display:inline-flex;gap:8px;align-items:center}
+</style>
+
+<vvvvvv>
+   <video nnnnnn autoplay muted loop playsinline poster="WhatsApp Video 2026-09-22 at 7.39.01 PM.mp4" style="width: 1350px;">
+    <source src="WhatsApp Video 2026-09-22 at 7.39.01 PM.mp4" type="video/mp4">
+  </video>
+
+ 
+  <cccccc>
+    <dddddd>
+ <br>
+      <!-- غير الكلام اللي على الفيديو من هنا -->
+      <ffffff> COMPANY <kkkkkk>CASSIA   </kkkkkk>  FURNITURE<br>GOLD OPEN</ffffff>
+
+ <br> <br>
+ <br>
+ <br>
+ <br>
+
+      <a href="#contactForm" hhhhhh>احجز معاينة مجانية</a>
+    </dddddd>
+  </cccccc>
+</vvvvvv>
+
+<section
+    class="about-section"
+    id="about"
+>
+
+    <div class="about">
+
+
+        <!-- الصورة ناحية اليمين -->
+
+        <div class="about-image">
+
+            <img
+                src="WhatsApp Image 2026-09-22 at 7.45.52 PM.jpeg"
+                alt="Luxury Door"
+            >
+
+
+            <div class="experience">
+
+                <strong>15+</strong>
+
+                سنة خبرة
+
+            </div>
+
+        </div>
+
+
+        <!-- الكلام ناحية الشمال -->
+
+        <div class="about-content">
+
+            <div class="section-label">
+                ABOUT US
+            </div>
+
+
+            <h2>
+                نصنع  اثاثا
+                <br>
+                تعكس شخصيتك
+            </h2>
+
+
+            <p>
+
+                نحن متخصصون في تصميم وتصنيع
+                 الاثاث العصرية والكلاسيكية
+                بأعلى معايير الجودة والتشطيب.
+
+            </p>
+
+
+            <div class="check">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                خامات عالية الجودة
+
+            </div>
+
+
+            <div class="check">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                تصميمات عصرية
+
+            </div>
+
+
+            <div class="check">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                تصنيع حسب المقاس
+
+            </div>
+
+
+            <div class="check">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                خدمة ما بعد البيع
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     PRODUCTS
+========================= -->
+
+<section
+    class="products-section"
+    id="products"
+>
+
+    <div class="section-head">
+
+        <div class="section-label">
+            OUR PRODUCTS
+        </div>
+
+
+        <h2>
+            مجموعة  المنتجات
+        </h2>
+
+
+        <p>
+            اختر التصميم المناسب لمنزلك
+            واستمتع بتفاصيل مصممة بعناية.
+        </p>
+
+    </div>
+
+
+    <div class="filters">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="ابحث عن  اثاثك..."
+        >
+
+
+        <select id="categoryFilter">
+
+            <option value="all">
+                كل المنتجات
+            </option>
+
+           
+
+        </select>
+
+    </div>
+
+
+    <div
+        class="products"
+        id="productsContainer"
+    ></div>
+
+</section>
+
+
+
+<!-- =========================
+     SPECIAL SECTION
+========================= -->
+
+<section
+    class="special-section"
+    id="special"
+>
+
+    <div
+        class="special"
+        id="specialSection"
+    >
+
+
+        <!-- الصورة في اليمين -->
+
+        <div class="special-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85"
+                alt="Premium Door"
+            >
+
+        </div>
+
+
+        <!-- الكلام في الشمال -->
+
+        <div class="special-content">
+
+            <div class="section-label">
+                WHY CHOOSE US
+            </div>
+
+
+            <h2>
+                تفاصيل صغيرة
+                <br>
+                تصنع فرقًا كبيرًا
+            </h2>
+
+
+            <p>
+
+                نهتم بكل تفصيلة في   بدايةً
+                من اختيار الخامات وحتى التشطيب
+                النهائي، لأننا نؤمن أن  الاثاث ليس
+                مجرد جزء من المنزل، بل هو أول
+                انطباع عن المكان.
+
+            </p>
+
+
+            <a
+                href="#contact"
+                class="btn btn-gold"
+            >
+
+                تحدث معنا
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     STATS
+========================= -->
+
+<section class="stats">
+
+    <div class="stat">
+
+        <i class="fa-solid fa-door-open"></i>
+
+        <strong>5000+</strong>
+
+        باب تم تنفيذه
+
+    </div>
+
+
+    <div class="stat">
+
+        <i class="fa-solid fa-users"></i>
+
+        <strong>300+</strong>
+
+        عميل
+
+    </div>
+
+
+    <div class="stat">
+
+        <i class="fa-solid fa-calendar-check"></i>
+
+        <strong>15+</strong>
+
+        سنة خبرة
+
+    </div>
+
+
+    <div class="stat">
+
+        <i class="fa-solid fa-star"></i>
+
+        <strong>5</strong>
+
+        تقييم العملاء
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section
+    class="contact-section"
+    id="contact"
+>
+
+    <div class="contact">
+
+
+        <div class="contact-info">
+
+            <div class="section-label">
+                CONTACT US
+            </div>
+
+
+            <h2>
+                اطلب  اثاثك الآن
+            </h2>
+
+
+            <p>
+
+                ابعت لنا بياناتك وسيتم التواصل
+                معك لمعرفة المقاسات والتصميم
+                المناسب.
+
+            </p>
+
+
+            <div class="contact-item">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <div>
+
+                    <strong>الهاتف</strong>
+
+                    <br>
+
+                    +20 123 456 7890
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <div>
+
+                    <strong>الإيميل</strong>
+
+                    <br>
+
+                    info@example.com
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                <div>
+
+                    <strong>واتساب</strong>
+
+                    <br>
+
+                    متاح طوال اليوم
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <form
+            class="contact-form"
+            id="contactForm"
+        >
+
+            <div class="input-group">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="الاسم"
+                >
+
+            </div>
+
+
+            <div class="input-group">
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="رقم الهاتف"
+                >
+
+            </div>
+
+
+            <div class="input-group">
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="البريد الإلكتروني"
+                >
+
+            </div>
+
+
+            <div class="input-group">
+
+                <textarea
+                    id="message"
+                    placeholder="اكتب تفاصيل طلبك..."
+                ></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="submit-btn"
+            >
+
+                إرسال الطلب
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+            </button>
+
+
+            <div id="formMessage"></div>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="footer-grid">
+
+
+        <div>
+
+            <div class="footer-logo">
+
+                CASSIA
+                <span>FURNITURE</span>
+
+            </div>
+
+
+            <p>
+
+                 اثاث تجمع بين التصميم
+                والجودة والفخامة لتناسب
+                كل مشروع.
+
+            </p>
+
+
+            <div class="social-icons" style="margin-top:20px;">
+
+                <a href="https://www.facebook.com/share/1GcJjkguno/">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.facebook.com/share/1GcJjkguno/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.facebook.com/share/1GcJjkguno/">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <a
+                    href="https://wa.me/01515256635"
+                    target="_blank"
+                >
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                روابط سريعة
+            </h3>
+
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="#home">الرئيسية</a>
+                </li>
+
+                <li>
+                    <a href="#about">عن الشركة</a>
+                </li>
+
+                <li>
+                    <a href="#products">المنتجات</a>
+                </li>
+
+                <li>
+                    <a href="#contact">تواصل معنا</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                تواصل معنا
+            </h3>
+
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                    +201515256635
+            </p>
+
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                info@example.com
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 CASSIA FURNITURE — جميع الحقوق محفوظة
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================
+     WHATSAPP FLOATING BUTTON
+========================= -->
+
+<a
+    href="https://wa.me/201515256635"
+    target="_blank"
+    class="whatsapp"
+    aria-label="WhatsApp"
+>
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+
+<script>
+
+
+ /* =====================================================
+   1️⃣ رقم واتساب العميل
+   =====================================================
+
+   غيّر الرقم ده فقط
+
+   مثال:
+   01012345678
+
+   يتحول إلى:
+   201012345678
+
+   بدون + وبدون مسافات
+===================================================== */
+
+const WHATSAPP_NUMBER = "201515256635";
+
+
+
+/* =====================================================
+   2️⃣ LOADER
+   =====================================================
+
+   الدائرة هتفضل موجودة 12 ثانية
+===================================================== */
+
+setTimeout(function () {
+
+    document
+        .getElementById("loader")
+        .classList.add("hide");
+
+}, 12000);
+
+
+
+/* =====================================================
+   3️⃣ المنتجات
+===================================================== */
+
+const products = [
+     
+             {
+        id: 1,
+        name: "ofeer is company", 
+        price: " ofeer%  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.36.44 PM.jpeg"
+    },
+              {
+        id: 1,
+        name: "ofeer is company", 
+        price: " ofeer%  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.34.40 PM.jpeg"
+    },
+             {
+        id: 1,
+        name: "ofeer is company", 
+        price: " ofeer%  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.34.02 PM (1).jpeg"
+    },
+            {
+        id: 1,
+        name: "ofeer is company", 
+        price: "  offer%",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.34.45 PM.jpeg"
+    },
+         {
+        id: 1,
+        name: " سعر الكرسي    ", 
+        price: " 5500جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.20.48 PM.jpeg"
+    },
+     {
+        id: 1,
+        name: "    سعر الطقم ", 
+        price: " 30000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.18.07 PM.jpeg"
+    },
+
+            {
+        id: 1,
+        name: " سعر الطقم", 
+        price: "11600 جنيه",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.27.12 PM.jpeg"
+    },
+         {
+        id: 1,
+        name: " سعر الطقم", 
+        price: "25000 جنيه",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.27.13 PM.jpeg"
+    },
+     {
+        id: 1,
+        name: " سعر الطقم", 
+        price: "12500 جنيه",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.27.14 PM (1).jpeg"
+    },
+
+    {
+        id: 1,
+        name: "شاسية حديد معدن دهان الكتروستاتيك معالج ضد المية والعوامل الخارجية ماكسي بالامويل البلاستيك البيور", 
+        price: "1500 جنيه",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.44.09 PM.jpeg"
+    },
+
+    {
+        id: 2,
+        name: "كرسي الشمس",
+        price: "1600 جنيه",
+        category: "luxury",
+        image: "WhatsApp Image 2026-09-22 at 7.44.49 PM.jpeg"
+    },
+
+    {
+        id: 3,
+        price: "17000 جنيه",
+        category: "internal",
+        image: "WhatsApp Image 2026-09-22 at 7.45.52 PM.jpeg"
+    },
+
+    {
+        id: 4,
+        name: "   سعر المرجيحه الواحد فرد عش العصفوره ",
+        price: "3900 جنيه",
+        category: "internal",
+        image: "WhatsApp Image 2026-09-22 at 7.46.52 PM.jpeg"
+    },
+
+    {
+        id: 5,
+        name: "        سعر الطقم الفوتية المعدن المزين بالخشب ",
+        price: "12,000 جنيه",
+        category: "internal",
+        image: "WhatsApp Image 2026-09-22 at 7.47.20 PM.jpeg"
+    },
+
+    {
+        id: 6,
+        name: "    سعر الركنة الفوتية المعدن   ",
+        price: " 16000 جنيه",
+        category: "luxury",
+        image: "WhatsApp Image 2026-09-22 at 7.47.49 PM.jpeg"
+    },
+
+    {
+        id: 7,
+        name: " سعر الطقم ",
+        price: "18500 جنيه",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.48.19 PM.jpeg"
+    },
+
+    {
+        id: 8,
+        name: " سعر الطقم الميش ",
+        price: "5800 جنيه",
+        category: "luxury",
+        image: "WhatsApp Image 2026-09-22 at 7.48.53 PM.jpeg"
+    },
+
+    {
+        id: 9,
+        name: " سعر الطقم ",
+        price: "6300 جنيه",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.49.19 PM.jpeg"
+    },
+        {
+        id: 9,
+        name: " سعر الطقم الVip",
+        price: "12,000 جنيه",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.50.07 PM.jpeg"
+    },
+    {
+        id: 9,
+        name: "سعر الكرسى الهزاز ",
+        price: "2500 جنيه",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.50.48 PM.jpeg"
+    },
+    {
+        id: 9,
+        name: "سعر الركنة الفوتية ",
+        price: "18000 جنيه",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.51.16 PM.jpeg"
+    },
+    {
+        id: 9,
+        name: "سعر الطقم الدوبار  ",
+        price: " 6000جنيه",
+        category: "external",
+        image:"WhatsApp Image 2026-09-22 at 7.52.08 PM.jpeg"
+    },
+    {
+        id: 9,
+        name: "الكرسى البار ",
+        price: "1300 جنيه",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.52.33 PM.jpeg"
+    },
+    {
+        id: 9,
+        name: "    المرجيحه ال2فرد عيش العصفوره  ",
+        price: " 4200جنيه",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.52.59 PM.jpeg"
+    },
+    {
+        id: 9,
+        name: "سعر السفره المودرن الشريط ",
+        price: "11600 جنيه",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.57.05 PM.jpeg"
+    },
+    {
+        id: 9,
+        name: " سعر الطقم البطيخة كنبه 2فرد 2كرسى ترابيزه ",
+        price: " 7000  جنيه",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.59.48 PM.jpeg"
+    },
+    {
+        id: 9,
+        name: "سعر الكرسين والترابيزه ",
+        price: "3800 جنيه",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.14.48 PM.jpeg"
+    },
+       {
+        id: 9,
+        name: " سعر الطقم ",
+        price: "25000 جنيه",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.15.34 PM.jpeg"
+    },
+      {
+        id: 2,
+        name: "سعر السفره  الفوتية المعدن المزين بالخشب المكونه من 8كراسى +ترابيزه سفره مستطيله",
+        price: "25000 جنيه",
+        category: "luxury",
+        image: "WhatsApp Image 2026-09-22 at 8.16.38 PM.jpeg"
+    },
+       {
+        id: 9,
+        name: "سعر الطقم ",
+        price: "8800 جنيه",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.17.52 PM.jpeg"
+    },
+     {
+        id: 9,
+        name: "سعر الطقم ",
+        price: " 7200جنيه",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.18.13 PM.jpeg"
+    },
+
+     {
+        id: 9,
+        name: " سعر السرير ",
+        price: " 10000جنيه",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.18.38 PM.jpeg"
+    },
+     {
+        id: 9,
+        name: "سعر الطقم  ",
+        price: "13000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.19.14 PM.jpeg"
+    },
+       {
+        id: 9,
+        name: "سعر الكرسين والترابيزه  ",
+        price: " 3300جنيه",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.19.36 PM.jpeg"
+    },
+        {
+        id: 9,
+        name: " سعر الطقم ",
+        price: "23000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.20.01 PM.jpeg"
+    },
+    
+        {
+        id: 9,
+        name: " سعر الكرسين والترابيزه ",
+        price: " 3300جنيه",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.20.32 PM.jpeg"
+    },
+     {
+        id: 9,
+        name: " سعر الطقم ",
+        price: "17000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.20.58 PM.jpeg"
+    },
+
+      {
+        id: 9,
+        name: " سعر الطقم ",
+        price: "15000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.21.45 PM.jpeg"
+    },
+     {
+        id: 9,
+        name: " سعر البرجوله ",
+        price: " 13000جنيه",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.22.08 PM.jpeg"
+    },
+      {
+        id: 9,
+        name: " سعر الطقم الفوتية ",
+        price: "20000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.22.47 PM.jpeg"
+    },
+      {
+        id: 9,
+        name: "سعر الكرسين والترابيزه  ",
+        price: "7500جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.23.28 PM.jpeg"
+    },
+          {
+        id: 9,
+        name: "    سعر المرجيحه ال3فرد    ",
+        price: "12000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.24.03 PM.jpeg"
+    },      {
+        id: 9,
+        name: "    سعر الكرسى الهزاز    ",
+        price: "2300جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.24.21 PM.jpeg"
+    },      {
+        id: 9,
+        name: "  سعر الكرسين البوفين      ",
+        price: "6800جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.25.02 PM.jpeg"
+    },      {
+        id: 9,
+        name: "    سعر الطقم   ",
+        price: "10000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.25.38 PM.jpeg"
+    },      {
+        id: 9,
+        name: "  سعر السفره المودرن      ",
+        price: "23000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.27.08 PM.jpeg"
+    },      {
+        id: 9,
+        name: "     سعر الطقم   ",
+        price: "20000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.31.32 PM.jpeg"
+    },      {
+        id: 9,
+        name: "سعر   الطقم   ",
+        price: "20000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.31.36 PM.jpeg"
+    },      {
+        id: 9,
+        name: "سعر   الطقم   ",
+        price: "19500جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.33.29 PM.jpeg"
+    },      {
+        id: 9,
+        name: "     برجيله 3 افراد  ",
+        price: "7500جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.31.43 PM.jpeg"
+    },      {
+        id: 9,
+        name: "     ركنه فوتيه معدن   ",
+        price: "21000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.34.20 PM.jpeg"
+    },      {
+        id: 9,
+        name: "     سفره   ",
+        price: "26000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.31.39 PM.jpeg"
+    },      {
+        id: 9,
+        name: "    سعر الطقم  ",
+        price: "36000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.36.58 PM.jpeg"
+    },      
+       {
+        id: 9,
+        name: "سعر  الطقم    ",
+        price: "3400جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.43.08 PM.jpeg"
+    },      {
+        id: 9,
+        name: "سعر  الطقم    ",
+        price: "6500جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.44.59 PM.jpeg"
+    },      {
+        id: 9,
+        name: "سعر    الطقم  ",
+        price: "25000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.46.08 PM.jpeg"
+    },      {
+        id: 9,
+        name: "سعر    الطقم  ",
+        price: "25000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.46.13 PM.jpeg"
+    },      {
+        id: 9,
+        name: "سعر  الطقم    ",
+        price: "13000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.46.20 PM.jpeg"
+    },      {
+        id: 9,
+        name: "سعر   الطقم   ",
+        price: "5000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.47.31 PM.jpeg"
+    },      {
+        id: 9,
+        name: "سعر   الطقم   ",
+        price: "25000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.49.25 PM.jpeg"
+    },      {
+        id: 9,
+        name: "سعر  الطقم    ",
+        price: "22000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.50.15 PM.jpeg"
+    },      {
+        id: 9,
+        name: "سعر     الطقم ",
+        price: "25000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.50.21 PM.jpeg"
+    },      {
+        id: 9,
+        name: "سعر     المرجيحه 3فرد  ",
+        price: "5800جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.50.44 PM.jpeg"
+    },      {
+        id: 9,
+        name: "سعر     الطقم ",
+        price: "23000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.51.24 PM.jpeg"
+    },      {
+        id: 9,
+        name: "سعر السفره     ",
+        price: "30000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.52.20 PM.jpeg"
+    },      {
+        id: 9,
+        name: "سعر     الطقم ",
+        price: "24000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.53.19 PM.jpeg"
+    },      {
+        id: 9,
+        name: "سعر    الطقم  ",
+        price: "7500جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.53.48 PM.jpeg"
+    },      {
+        id: 9,
+        name: "سعر     الطقم ",
+        price: "12000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.54.19 PM.jpeg"
+    },      {
+        id: 9,
+        name: "سعر     الطقم    ",
+        price: "16000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.55.35 PM.jpeg"
+    },      {
+        id: 9,
+        name: "سعر   الطقم   ",
+        price: "24000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.56.18 PM.jpeg"
+    },      {
+        id: 9,
+        name: "سعر     الطقم ",
+        price: "6000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.57.54 PM.jpeg"
+    },      {
+        id: 9,
+        name: "سعر   الطقم   ",
+        price: "28000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.59.56 PM.jpeg"
+    },
+
+     {
+        id: 9,
+        name: "سعر الطقم  ",
+        price: "13000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.19.14 PM.jpeg"
+    },
+       {
+        id: 9,
+        name: "سعر الكرسين والترابيزه  ",
+        price: " 3300جنيه",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.19.36 PM.jpeg"
+    },
+        {
+        id: 9,
+        name: " سعر الطقم ",
+        price: "23000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.20.01 PM.jpeg"
+    },
+    
+        {
+        id: 9,
+        name: " سعر الكرسين والترابيزه ",
+        price: " 3300جنيه",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.20.32 PM.jpeg"
+    },
+     {
+        id: 9,
+        name: " سعر الطقم ",
+        price: "17000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.20.58 PM.jpeg"
+    },
+
+      {
+        id: 9,
+        name: " سعر الطقم ",
+        price: "15000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.21.45 PM.jpeg"
+    },
+     {
+        id: 9,
+        name: " سعر البرجوله ",
+        price: " 13000جنيه",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.22.08 PM.jpeg"
+    },
+      {
+        id: 9,
+        name: " سعر الطقم الفوتية ",
+        price: "20000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.22.47 PM.jpeg"
+    },
+      {
+        id: 9,
+        name: "سعر الكرسين والترابيزه  ",
+        price: "7500جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.23.28 PM.jpeg"
+    },
+          {
+        id: 9,
+        name: "    سعر المرجيحه ال3فرد    ",
+        price: "12000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.24.03 PM.jpeg"
+    },      {
+        id: 9,
+        name: "    سعر الكرسى الهزاز    ",
+        price: "2300جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.24.21 PM.jpeg"
+    },      {
+        id: 9,
+        name: "  سعر الكرسين البوفين      ",
+        price: "6800جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.25.02 PM.jpeg"
+    },      {
+        id: 9,
+        name: "    سعر الطقم   ",
+        price: "10000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.25.38 PM.jpeg"
+    },      {
+        id: 9,
+        name: "  سعر السفره المودرن      ",
+        price: "23000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.27.08 PM.jpeg"
+    },      {
+        id: 9,
+        name: "     سعر الطقم   ",
+        price: "20000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.31.32 PM.jpeg"
+    },      {
+        id: 9,
+        name: "سعر   الطقم   ",
+        price: "20000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.31.36 PM.jpeg"
+    },      {
+        id: 9,
+        name: "سعر   الطقم   ",
+        price: "19500جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.33.29 PM.jpeg"
+    },      {
+        id: 9,
+        name: "     برجيله 3 افراد  ",
+        price: "7500جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 8.31.43 PM.jpeg"
+    }, 
+     {
+        id: 9,
+        name: "        سعر الكرسي    ",
+        price: "1700جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.27.10 PM.jpeg"
+    }, 
+     {
+        id: 9,
+        name: "      سعر الطقم     ",
+        price: "13000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.26.50 PM.jpeg"
+    }, 
+         {
+        id: 9,
+        name: "      سعر الطقم     ",
+        price: "12000جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.26.49 PM.jpeg"
+    }, 
+     {
+        id: 9,
+        name: "      سعر الطقم     ",
+        price: " 9600جنيه ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.26.42 PM.jpeg"
+    }, 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     {
+        id: 9,
+        name: "            ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.46.52 PM.jpeg"
+    }, 
+       {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.27.03 PM.jpeg"
+    }, 
+     
+       {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.27.02 PM.jpeg"
+
+    }, 
+    {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.27.00 PM.jpeg"
+
+    }, 
+      {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.26.58 PM.jpeg"
+
+    }, 
+      {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.26.48 PM.jpeg"
+
+    }, 
+   {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.07.35 PM.jpeg"
+
+    }, 
+     {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.07.32 PM.jpeg"
+
+    }, 
+
+     {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.07.31 PM.jpeg"
+
+    }, 
+
+     {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.07.00 PM.jpeg"
+
+    }, 
+    
+     {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.27.46 PM.jpeg"
+
+    }, 
+     {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.27.45 PM.jpeg"
+
+    }, 
+       {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.27.43 PM.jpeg"
+
+    }, 
+     {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.27.30 PM.jpeg"
+
+    }, 
+       {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-22 at 7.27.13 PM.jpeg"
+
+    }, 
+     {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.36.50 PM.jpeg"
+
+    }, 
+         {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.36.52 PM.jpeg"
+
+    },    {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.36.55 PM.jpeg"
+
+    }, 
+ {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.36.58 PM.jpeg"
+
+    }, 
+ {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.37.03 PM.jpeg"
+
+    }, 
+     {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.37.05 PM.jpeg"
+
+    }, 
+       {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.37.07 PM.jpeg"
+
+    }, 
+  {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.37.13 PM.jpeg"
+
+    }, 
+     {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.37.24 PM.jpeg"
+
+    }, 
+     {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.37.26 PM.jpeg"
+
+    }, 
+         {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.37.32 PM.jpeg"
+
+    }, 
+    
+         {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.37.34 PM.jpeg"
+
+    }, 
+     {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.37.38 PM.jpeg"
+
+    }, 
+    {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.37.41 PM.jpeg"
+
+    }, 
+     {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.37.44 PM.jpeg"
+
+    }, 
+ {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.37.49 PM.jpeg"
+
+    }, 
+     {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.37.52 PM.jpeg"
+
+    }, 
+     {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.37.55 PM.jpeg"
+
+    }, 
+  {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.37.58 PM.jpeg"
+
+    }, 
+     {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.38.02 PM.jpeg"
+
+    }, 
+     {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.38.06 PM.jpeg"
+
+    }, 
+       {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.38.09 PM.jpeg"
+
+    }, 
+ {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.38.19 PM.jpeg"
+
+    }, 
+
+     {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.38.21 PM.jpeg"
+
+    }, 
+     {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.38.28 PM.jpeg"
+
+    },
+        {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.38.30 PM.jpeg"
+
+    },
+     {
+        id: 9,
+        name: "  ",
+        price: "  ",
+        category: "external",
+        image: "WhatsApp Image 2026-09-23 at 5.45.29 PM.jpeg"
+
+    },
+
+
+
+
+
+    
+
+
+ 
+ 
+
+
+
+
+    
+
+      
+    
+
+];
+
+
+
+/* =====================================================
+   4️⃣ عرض المنتجات
+===================================================== */
+
+const productsContainer =
+    document.getElementById("productsContainer");
+
+
+function displayProducts(list) {
+
+    productsContainer.innerHTML = "";
+
+
+    // لو مفيش منتجات
+    if (list.length === 0) {
+
+        productsContainer.innerHTML = `
+
+            <p style="
+                grid-column:1/-1;
+                text-align:center;
+                padding:50px;
+                color:#777;
+            ">
+
+                لا توجد منتجات مطابقة للبحث
+
+            </p>
+
+        `;
+
+        return;
+    }
+
+
+    // عرض المنتجات
+    list.forEach(function(product) {
+
+        productsContainer.innerHTML += `
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="${product.image}"
+                        alt="${product.name}"
+                    >
+
+                </div>
+
+
+                <div class="product-content">
+
+                    <h3>
+                        ${product.name}
+                    </h3>
+
+
+                    <p>
+                        تصميم فاخر وتشطيب عالي الجودة
+                    </p>
+
+
+                    <div class="product-bottom">
+
+                        <span class="price">
+                            ${product.price}
+                        </span>
+
+
+                        <button
+                            class="order-btn"
+                            onclick="orderProduct('${product.name}')"
+                        >
+
+                            اطلب الآن
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        `;
+
+    });
+
+}
+
+
+// عرض المنتجات أول ما الصفحة تفتح
+displayProducts(products);
+
+
+
+/* =====================================================
+   5️⃣ البحث عن المنتجات
+===================================================== */
+
+const searchInput =
+    document.getElementById("searchInput");
+
+
+const categoryFilter =
+    document.getElementById("categoryFilter");
+
+
+function filterProducts() {
+
+    // القيمة اللي كتبها المستخدم
+    const search =
+        searchInput.value
+        .toLowerCase()
+        .trim();
+
+
+    // التصنيف المختار
+    const category =
+        categoryFilter.value;
+
+
+    // فلترة المنتجات
+    const filtered =
+        products.filter(function(product) {
+
+            const matchesSearch =
+                product.name
+                .toLowerCase()
+                .includes(search);
+
+
+            const matchesCategory =
+                category === "all" ||
+                product.category === category;
+
+
+            return matchesSearch &&
+                   matchesCategory;
+
+        });
+
+
+    // عرض النتيجة
+    displayProducts(filtered);
+
+}
+
+
+// تشغيل البحث أثناء الكتابة
+searchInput.addEventListener(
+    "input",
+    filterProducts
+);
+
+
+// تشغيل الفلتر
+categoryFilter.addEventListener(
+    "change",
+    filterProducts
+);
+
+
+
+/* =====================================================
+   6️⃣ زر "اطلب الآن" الموجود في المنتجات
+===================================================== */
+
+function orderProduct(productName) {
+
+    // الرسالة اللي هتتبعت للعميل
+    const message = `
+
+مرحباً 👋
+
+أريد الاستفسار عن المنتج:
+
+🚪 ${productName}
+
+أريد معرفة السعر والمقاسات والتفاصيل.
+
+شكراً لكم.
+
+`;
+
+
+    // إنشاء رابط واتساب
+    const whatsappURL =
+        `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
+
+    // فتح واتساب
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+}
+
+
+
+/* =====================================================
+   7️⃣ الفورم → واتساب
+===================================================== */
+
+const contactForm =
+    document.getElementById("contactForm");
+
+
+contactForm.addEventListener(
+    "submit",
+    function(event) {
+
+        // منع Refresh الصفحة
+        event.preventDefault();
+
+
+        // الحصول على بيانات العميل
+        const name =
+            document
+            .getElementById("name")
+            .value
+            .trim();
+
+
+        const phone =
+            document
+            .getElementById("phone")
+            .value
+            .trim();
+
+
+        const email =
+            document
+            .getElementById("email")
+            .value
+            .trim();
+
+
+        const message =
+            document
+            .getElementById("message")
+            .value
+            .trim();
+
+
+        const formMessage =
+            document.getElementById("formMessage");
+
+
+
+        /* ==========================================
+           التحقق من البيانات
+        ========================================== */
+
+        if (
+            name === "" ||
+            phone === "" ||
+            message === ""
+        ) {
+
+            formMessage.textContent =
+                "من فضلك املأ الاسم ورقم الهاتف وتفاصيل الطلب";
+
+            formMessage.style.color =
+                "red";
+
+            return;
+        }
+
+
+
+        /* ==========================================
+           تجهيز رسالة واتساب
+        ========================================== */
+
+        const whatsappMessage = `
+
+مرحباً 👋
+
+لدي طلب جديد من الموقع 🔔
+
+
+👤 الاسم:
+${name}
+
+
+📱 رقم الهاتف:
+${phone}
+
+
+📧 البريد الإلكتروني:
+${email || "لم يتم إدخاله"}
+
+
+📝 تفاصيل الطلب:
+${message}
+
+
+-------------------------
+
+تم إرسال الطلب من الموقع.
+
+`;
+
+
+
+        /* ==========================================
+           إنشاء رابط واتساب
+        ========================================== */
+
+        const whatsappURL =
+            `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
+
+
+
+        /* ==========================================
+           فتح واتساب
+        ========================================== */
+
+        window.open(
+            whatsappURL,
+            "_blank"
+        );
+
+
+
+        /* ==========================================
+           رسالة نجاح
+        ========================================== */
+
+        formMessage.textContent =
+            "تم تجهيز الطلب وإرساله إلى واتساب ✓";
+
+        formMessage.style.color =
+            "green";
+
+
+
+        /* ==========================================
+           تنظيف الفورم
+        ========================================== */
+
+        contactForm.reset();
+
+    }
+);
+
+
+
+/* =====================================================
+   8️⃣ زر الواتساب العائم
+===================================================== */
+
+const whatsappButtons =
+    document.querySelectorAll(
+        ".whatsapp"
+    );
+
+
+whatsappButtons.forEach(function(button) {
+
+    button.href =
+        `https://wa.me/${WHATSAPP_NUMBER}`;
+
+});
+
+
+
+/* =====================================================
+   9️⃣ روابط واتساب الموجودة فوق
+===================================================== */
+
+const whatsappLinks =
+    document.querySelectorAll(
+        'a[aria-label="WhatsApp"]'
+    );
+
+
+whatsappLinks.forEach(function(link) {
+
+    link.href =
+        `https://wa.me/${WHATSAPP_NUMBER}`;
+
+});
+
+
+
+/* =====================================================
+   🔟 القائمة في الموبايل
+===================================================== */
+
+const menuBtn =
+    document.getElementById("menuBtn");
+
+
+const navLinks =
+    document.getElementById("navLinks");
+
+
+menuBtn.addEventListener(
+    "click",
+    function() {
+
+        navLinks.classList.toggle(
+            "active"
+        );
+
+    }
+);
+
+
+
+/* =====================================================
+   1️⃣1️⃣ إغلاق القائمة بعد الضغط على رابط
+===================================================== */
+
+document
+    .querySelectorAll(".nav-links a")
+    .forEach(function(link) {
+
+        link.addEventListener(
+            "click",
+            function() {
+
+                navLinks.classList.remove(
+                    "active"
+                );
+
+            }
+        );
+
+    });
+
+
+
+/* =====================================================
+   1️⃣2️⃣ Animation للقسم الخاص
+===================================================== */
+
+const specialSection =
+    document.getElementById(
+        "specialSection"
+    );
+
+
+const observer =
+    new IntersectionObserver(
+        function(entries) {
+
+            entries.forEach(function(entry) {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add(
+                        "show"
+                    );
+
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.2
+        }
+    );
+
+
+observer.observe(
+    specialSection
+);
+
+
+
+/* =====================================================
+   1️⃣3️⃣ اللغة عربي / English
+===================================================== */
+
+const languageBtn =
+    document.getElementById(
+        "languageBtn"
+    );
+
+
+let englishMode = false;
+
+
+languageBtn.addEventListener(
+    "click",
+    function() {
+
+        englishMode =
+            !englishMode;
+
+
+        if (englishMode) {
+
+            document.documentElement.lang =
+                "en";
+
+
+            document.documentElement.dir =
+                "ltr";
+
+
+            languageBtn.innerHTML =
+
+                '<i class="fa-solid fa-globe"></i> عربي';
+
+
+        } else {
+
+            document.documentElement.lang =
+                "ar";
+
+
+            document.documentElement.dir =
+                "rtl";
+
+
+            languageBtn.innerHTML =
+
+                '<i class="fa-solid fa-globe"></i> English';
+
+        }
+
+    }
+); 
+ 
+ 
+      
+
+</script>
+
+</body>
+
+</html>
